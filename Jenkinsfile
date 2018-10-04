@@ -20,8 +20,6 @@ node {
     build job: 'downstream-freestyle', parameters: [[$class: 'StringParameterValue', name: 'prop', value: selectedProperty]]
 }
 
-import static groovy.io.FileType.FILES
-
 @NonCPS
 def inputParamsString(dir) {
     def list = []
