@@ -11,15 +11,3 @@
           name: 'prop'] ])
     
     println "Property: $selectedProperty"
-    
-    // Change `job` value to your downstream job name
-    // Change `name` value to the name you gave the string parameter in your downstream job
-
-https://github.com/jenkinsci/jenkins/blob/master/core/src/main/java/hudson/model/ChoiceParameterDefinition.java#L20
-
- @DataBoundConstructor
-    public ChoiceParameterDefinition(String name, String choices, String description) {
-        super(name, description);
-        this.choices = Arrays.asList(choices.split(CHOICES_DELIMITER));
-        defaultValue = null;
-    }
